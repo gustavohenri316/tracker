@@ -5,19 +5,19 @@ import { Link } from '../../components/molecules/Link'
 import { SideBarHero } from '../../components/organism/SideBarHero'
 import { TemplateContainer, TemplateContent, TemplateMainHeroSection } from '../../components/templates'
 
-export const Login = () => {
+export const Register = () => {
     return (
         <TemplateContainer>
             <TemplateContent>
                 <SideBarHero/>
                 <TemplateMainHeroSection>
-                    <h1 className="font-bold text-3xl">Acesse sua conta</h1>
+                    <h1 className="font-bold text-3xl">Crie sua conta</h1>
                     <form className="flex flex-col w-full gap-4 max-w-xs">
                        <InputText label='Email' type='email'/>
                        <InputText label='Senha' type="password"/>
-                        <Button>Entrar</Button>
+                        <Button>Criar Conta</Button>
                     </form>
-                    <Link href='/register'>Criar Conta</Link>
+                    <Link href='/'>Já tenho uma conta</Link>
                 </TemplateMainHeroSection>
             </TemplateContent>
         </TemplateContainer>
